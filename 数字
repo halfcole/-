@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+	int a,b,c,imp;
+	printf("请输入三个数\n");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b)
+	{
+		imp=a,a=b,b=imp;
+	}
+	if(a>c)
+	{
+		imp=a,a=c,c=imp;
+	}
+	if(b>c)
+	{
+		imp=b,b=c,c=imp;
+	}
+	printf("%d,%d,%d\n",a,b,c);
+}
